@@ -1,6 +1,4 @@
-# Medium_Tech_News_Scraper
-
-![Medium Tech News Scraper](https://media.giphy.com/media/1yTgkr0z0GjPLbTjsO/giphy.gif)
+# News-Scraper
 
 ## Overview
 
@@ -8,7 +6,7 @@ In this project, I created app that allows you to scrape [Medium](https://medium
 
 
 ## Inspiration
-I read Medium tech news everyday on my way to work. Sometimes instead of waiting for the daily email notification, I want to just glance at what's in the spotlight. Now I can with my [Medium Tech News Scraper](https://medium-tech-scraper.herokuapp.com/). I have a reliable way of getting all my articles both on mobile or desktop in seconds. I can even write notes to go along with the specific article. If a friend writes a note on the same article, I can see what their thoughts are about it too!
+I read Medium tech news everyday on my way to work. Sometimes instead of waiting for the daily email notification, I want to just glance at what's in the spotlight. Now I can with my [News-Scraper](https://ak-mongo-scraper.herokuapp.com/). I have a reliable way of getting all my articles both on mobile or desktop in seconds. I can even write notes to go along with the specific article. If a friend writes a note on the same article, I can see what their thoughts are about it too!
 
 
 ## How I built it
@@ -27,5 +25,3 @@ Running an npm install should install all of the dependencies you need to get th
 
 ## What I learned
 This app helped me understand better how to traverse the DOM, not only for getting input from the user but traversing a separate webpage than my own creations. I was able to better understand how different collections are associated within a database, which helped simplify the proccess of keeping all my data in one place.
-
-[Medium-tech-scraper](https://medium-tech-scraper.herokuapp.com/)

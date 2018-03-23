@@ -1,9 +1,10 @@
 {
   "name": "News_Scraper",
   "version": "1.0.0",
-  "description": "![Medium Tech News Scraper](https://media.giphy.com/media/1yTgkr0z0GjPLbTjsO/giphy.gif)",
+  "description": "## Overview",
   "main": "server.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "body-parser": "^1.18.2",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.2",
@@ -12,7 +13,6 @@
     "morgan": "^1.9.0",
     "request": "^2.83.0"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
