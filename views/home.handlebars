@@ -1,0 +1,79 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Medium Scraper</title>
+  <!-- CSS  -->
+  <link href="assets/css/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="assets/css/home.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+
+	    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Anthonys Article Scraper</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" id="logo" href="#medium">Medium Scraper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="saved" href="#saved-articles">Saved Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="scrape" href="#scrape">Scrape Medium</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Medium Article Scraper</h1>
+    <p class="lead">Click on the Scape Medium for new articles</p>
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="article-info">Added <span id="article-length"></span> new articles!</p>
+  </div>
+</div>
+
+<div id="wrapper">
+  <div class="ui column stackable grid centered" id="articles">
+     {{#each articles}}
+    {{!-- Each article will fit into a card--}}
+    <div class="ui card">
+     
+      <a href={{url}} target="_blank">
+        <div class="image">
+          <img class="ui centered medium image" src={{imgURL}} alt={{headline}} id="img-{{_id}}" />
+        </div>
+        <div class="content">
+          <p class="header">{{headline}}</p>
+      </a>
+      <div class="description">
+        {{summary}}
+      </div>
+      </div>
+      <div class="extra content">
+        <div data-id={{_id}} class="ui animated button saveArticle" tabindex="0">
+          <div class="visible content">Save Article</div>
+          <div class="hidden content">
+            <i class="right arrow icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+</div>
+		
+  <script src="/assets/js/home.js"></script>
